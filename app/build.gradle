@@ -6,7 +6,8 @@ android {
         ouyangzx {
             keyAlias 'EGAN'
             keyPassword 'xiangshaono_4'
-            storeFile file('/Users/ouyangzx/AndroidStudioProjects/PayDemo/egan.jks')
+            //keystore路径
+            storeFile file('E:/androidproject/pay-java-android/egan.jks')
             storePassword 'xiangshaono_4'
         }
     }
@@ -46,5 +47,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile files('libs/libammsdk.jar')
+    compile project(':lib')
 }
